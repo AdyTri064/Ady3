@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyy</title>
+</head>
+
+<body>
+    <h1>Hai Cantiikkk</h1>
+    <img src="gambar.gif" width="150px" height="150px" alt="">
+    <h1>Maafin Aku yaaa....</h1>
+    <button id="btn_iya" onclick='alert("I LOVE YOU SAYAANGKUU!!!")'>iya</button>&nbsp;
+    <button id="btn_ga" onclick='ga(this)' style="position: absolute;">ga</button>
+</body>
+<script>
+    function ga(id) {
+        var iya = document.getElementById('btn_iya');
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + iya.offsetTop;
+        id.style.left = i + 'px';
+        id.style.top = j + 'px'; // Diperbaiki: hapus tanda kutip ekstra di sini
+    }
+</script>
+
+</html>
